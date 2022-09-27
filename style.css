@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --base-color: 194;
+
+  --txt-color: #ffffff;
+
+  --bg-body: #121214;
+  --bg-controls: hsla(var(--base-color), 100%, 63%, 0.13);
+
+  --btn-on: hsl(var(--base-color), 100%, 63%);
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: var(--txt-color);
+
+  background-color: var(--bg-body);
+}
+
+main {
+  align-self: end;
+  justify-self: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.play svg path,
+.pause svg path,
+.sound-on svg path {
+  fill: var(--btn-on);
+}
+
+button svg {
+  width: clamp(3.2rem, 2rem + 15vw, 6.4rem);
+}
+
+#timer {
+  display: flex;
+  font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+
+  margin-bottom: 1.6rem;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
+  background-color: var(--bg-controls);
+  width: clamp(10rem, 10rem + 25vw, 22.8rem);
+  height: clamp(8rem, 5rem + 5vh, 10.8rem);
+
+  border-radius: 9999px;
+}
+
+footer {
+  align-self: end;
+  justify-self: end;
+
+  padding: 0 2.5rem 3.2rem 0;
+}
