@@ -8,7 +8,8 @@ Projeto com foco no aprendizado dê:
 - Clean Code
 - Recursividade
 - ES6 Modules (*import, export*)
-- Factory, injeção de dependências e desestruturação.
+- Factory
+- Injeção de dependências e desestruturação
 
 [Deploy](https://timer-pomodoro-lb.netlify.app/)
 
